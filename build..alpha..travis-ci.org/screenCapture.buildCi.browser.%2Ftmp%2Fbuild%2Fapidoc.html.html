@@ -1,0 +1,3873 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/zippyui/react-date-picker">react-date-picker (v5.3.28)</a>
+</h1>
+<h4>A carefully crafted date picker for React</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker">module react-date-picker</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.Calendar">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>Calendar
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.Clock">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>Clock
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.ClockInput">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>ClockInput
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DateEditor">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>DateEditor
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DateField">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>DateField
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DateFormatInput">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>DateFormatInput
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DateFormatSpinnerInput">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>DateFormatSpinnerInput
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DatePicker">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>DatePicker
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>DecadeView
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.Footer">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>Footer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.HistoryView">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>HistoryView
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.MonthView">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>MonthView
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.MultiMonthView">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>MultiMonthView
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.NavBar">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>NavBar
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.TimeInput">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>TimeInput
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.TimePicker">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>TimePicker
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.TransitionView">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>TransitionView
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.YearView">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>YearView
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.default">
+            function <span class="apidocSignatureSpan">react-date-picker.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>BasicMonthView</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>assignDefined</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>bemFactory</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>clamp</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>clampRange</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>formats</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>forwardTime</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>getNewValue</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>getSelectionEnd</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>getSelectionStart</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>getTransitionEnd</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>getWeekDayNames</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>index</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>isInRange</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>join</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>joinFunctions</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>leftPad</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>onEnter</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>onKeyDown</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>parseFormat</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>setCaretPosition</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>times</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>toMoment</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>toTimeValue</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.</span>toUpperFirst</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.BasicMonthView">module react-date-picker.BasicMonthView</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.BasicMonthView.default">
+            function <span class="apidocSignatureSpan">react-date-picker.BasicMonthView.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.BasicMonthView.getDaysInMonthView">
+            function <span class="apidocSignatureSpan">react-date-picker.BasicMonthView.</span>getDaysInMonthView
+            <span class="apidocSignatureSpan">(value, props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.BasicMonthView.getWeekStartDay">
+            function <span class="apidocSignatureSpan">react-date-picker.BasicMonthView.</span>getWeekStartDay
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.BasicMonthView.getWeekStartMoment">
+            function <span class="apidocSignatureSpan">react-date-picker.BasicMonthView.</span>getWeekStartMoment
+            <span class="apidocSignatureSpan">(value, props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.BasicMonthView.getWeekendStartDay">
+            function <span class="apidocSignatureSpan">react-date-picker.BasicMonthView.</span>getWeekendStartDay
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.Calendar">module react-date-picker.Calendar</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.Calendar.default">
+            function <span class="apidocSignatureSpan">react-date-picker.Calendar.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.Calendar.</span>NAV_KEYS</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.Clock">module react-date-picker.Clock</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.Clock.default">
+            function <span class="apidocSignatureSpan">react-date-picker.Clock.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.ClockInput">module react-date-picker.ClockInput</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.ClockInput.default">
+            function <span class="apidocSignatureSpan">react-date-picker.ClockInput.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.DecadeView">module react-date-picker.DecadeView</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.confirm">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>confirm
+            <span class="apidocSignatureSpan">(date, event)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.default">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.getInitialState">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>getInitialState
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.gotoViewDate">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>gotoViewDate
+            <span class="apidocSignatureSpan">(_ref5)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.isDateInMinMax">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>isDateInMinMax
+            <span class="apidocSignatureSpan">(timestamp, props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.isValidActiveDate">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>isValidActiveDate
+            <span class="apidocSignatureSpan">(timestamp, props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.navigate">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>navigate
+            <span class="apidocSignatureSpan">(direction, event)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.onActiveDateChange">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>onActiveDateChange
+            <span class="apidocSignatureSpan">(_ref2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.onChange">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>onChange
+            <span class="apidocSignatureSpan">(_ref4, event)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.onKeyDown">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>onKeyDown
+            <span class="apidocSignatureSpan">(event)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.onViewDateChange">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>onViewDateChange
+            <span class="apidocSignatureSpan">(_ref3)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.prepareActiveDate">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>prepareActiveDate
+            <span class="apidocSignatureSpan">(props, state)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.prepareDate">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>prepareDate
+            <span class="apidocSignatureSpan">(props, state)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.prepareDateProps">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>prepareDateProps
+            <span class="apidocSignatureSpan">(props, state)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.prepareMinMax">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>prepareMinMax
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.prepareViewDate">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>prepareViewDate
+            <span class="apidocSignatureSpan">(props, state)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.DecadeView.select">
+            function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>select
+            <span class="apidocSignatureSpan">(_ref, event)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.Footer">module react-date-picker.Footer</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.Footer.Button">
+            function <span class="apidocSignatureSpan">react-date-picker.Footer.</span>Button
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.Footer.default">
+            function <span class="apidocSignatureSpan">react-date-picker.Footer.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.HistoryView">module react-date-picker.HistoryView</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.HistoryView.default">
+            function <span class="apidocSignatureSpan">react-date-picker.HistoryView.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.MultiMonthView">module react-date-picker.MultiMonthView</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.MultiMonthView.default">
+            function <span class="apidocSignatureSpan">react-date-picker.MultiMonthView.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.MultiMonthView.renderNavBar">
+            function <span class="apidocSignatureSpan">react-date-picker.MultiMonthView.</span>renderNavBar
+            <span class="apidocSignatureSpan">(config, navBarProps)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.NavBar">module react-date-picker.NavBar</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.NavBar.default">
+            function <span class="apidocSignatureSpan">react-date-picker.NavBar.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.TimePicker">module react-date-picker.TimePicker</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.TimePicker.default">
+            function <span class="apidocSignatureSpan">react-date-picker.TimePicker.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.TransitionView">module react-date-picker.TransitionView</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.TransitionView.default">
+            function <span class="apidocSignatureSpan">react-date-picker.TransitionView.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.YearView">module react-date-picker.YearView</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.YearView.default">
+            function <span class="apidocSignatureSpan">react-date-picker.YearView.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.assignDefined">module react-date-picker.assignDefined</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.assignDefined.default">
+            function <span class="apidocSignatureSpan">react-date-picker.assignDefined.</span>default
+            <span class="apidocSignatureSpan">(target)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.bemFactory">module react-date-picker.bemFactory</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.bemFactory.default">
+            function <span class="apidocSignatureSpan">react-date-picker.bemFactory.</span>default
+            <span class="apidocSignatureSpan">(className)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.clamp">module react-date-picker.clamp</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.clamp.clampHour">
+            function <span class="apidocSignatureSpan">react-date-picker.clamp.</span>clampHour
+            <span class="apidocSignatureSpan">(value, _ref2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.clamp.clampMinute">
+            function <span class="apidocSignatureSpan">react-date-picker.clamp.</span>clampMinute
+            <span class="apidocSignatureSpan">(value, _ref3)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.clamp.clampNamed">
+            function <span class="apidocSignatureSpan">react-date-picker.clamp.</span>clampNamed
+            <span class="apidocSignatureSpan">(name, value, _ref5)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.clamp.clampSecond">
+            function <span class="apidocSignatureSpan">react-date-picker.clamp.</span>clampSecond
+            <span class="apidocSignatureSpan">(value, _ref4)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.clamp.default">
+            function <span class="apidocSignatureSpan">react-date-picker.clamp.</span>default
+            <span class="apidocSignatureSpan">(value, _ref)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.clampRange">module react-date-picker.clampRange</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.clampRange.default">
+            function <span class="apidocSignatureSpan">react-date-picker.clampRange.</span>default
+            <span class="apidocSignatureSpan">(range)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.formats">module react-date-picker.formats</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.formats.getFormats">
+            function <span class="apidocSignatureSpan">react-date-picker.formats.</span>getFormats
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-date-picker.formats.</span>default</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.forwardTime">module react-date-picker.forwardTime</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.forwardTime.default">
+            function <span class="apidocSignatureSpan">react-date-picker.forwardTime.</span>default
+            <span class="apidocSignatureSpan">(from, to)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.getNewValue">module react-date-picker.getNewValue</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.getNewValue.default">
+            function <span class="apidocSignatureSpan">react-date-picker.getNewValue.</span>default
+            <span class="apidocSignatureSpan">(_ref10)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.getSelectionEnd">module react-date-picker.getSelectionEnd</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.getSelectionEnd.default">
+            function <span class="apidocSignatureSpan">react-date-picker.getSelectionEnd.</span>default
+            <span class="apidocSignatureSpan">(o)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.getSelectionStart">module react-date-picker.getSelectionStart</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.getSelectionStart.default">
+            function <span class="apidocSignatureSpan">react-date-picker.getSelectionStart.</span>default
+            <span class="apidocSignatureSpan">(o)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.getTransitionEnd">module react-date-picker.getTransitionEnd</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.getTransitionEnd.default">
+            function <span class="apidocSignatureSpan">react-date-picker.getTransitionEnd.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.getWeekDayNames">module react-date-picker.getWeekDayNames</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.getWeekDayNames.default">
+            function <span class="apidocSignatureSpan">react-date-picker.getWeekDayNames.</span>default
+            <span class="apidocSignatureSpan">(startDay, locale)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.index">module react-date-picker.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.index.default">
+            function <span class="apidocSignatureSpan">react-date-picker.index.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.isInRange">module react-date-picker.isInRange</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.isInRange.default">
+            function <span class="apidocSignatureSpan">react-date-picker.isInRange.</span>default
+            <span class="apidocSignatureSpan">(moment, configOrRange)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.join">module react-date-picker.join</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.join.default">
+            function <span class="apidocSignatureSpan">react-date-picker.join.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.joinFunctions">module react-date-picker.joinFunctions</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.joinFunctions.default">
+            function <span class="apidocSignatureSpan">react-date-picker.joinFunctions.</span>default
+            <span class="apidocSignatureSpan">(a, b)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.leftPad">module react-date-picker.leftPad</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.leftPad.default">
+            function <span class="apidocSignatureSpan">react-date-picker.leftPad.</span>default
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.onEnter">module react-date-picker.onEnter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.onEnter.default">
+            function <span class="apidocSignatureSpan">react-date-picker.onEnter.</span>default
+            <span class="apidocSignatureSpan">(fn)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.onKeyDown">module react-date-picker.onKeyDown</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.onKeyDown.default">
+            function <span class="apidocSignatureSpan">react-date-picker.onKeyDown.</span>default
+            <span class="apidocSignatureSpan">(event)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.parseFormat">module react-date-picker.parseFormat</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.parseFormat.default">
+            function <span class="apidocSignatureSpan">react-date-picker.parseFormat.</span>default
+            <span class="apidocSignatureSpan">(format)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.setCaretPosition">module react-date-picker.setCaretPosition</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.setCaretPosition.default">
+            function <span class="apidocSignatureSpan">react-date-picker.setCaretPosition.</span>default
+            <span class="apidocSignatureSpan">(elem, caretPos)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.times">module react-date-picker.times</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.times.default">
+            function <span class="apidocSignatureSpan">react-date-picker.times.</span>default
+            <span class="apidocSignatureSpan">(count)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.toMoment">module react-date-picker.toMoment</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.toMoment.default">
+            function <span class="apidocSignatureSpan">react-date-picker.toMoment.</span>default
+            <span class="apidocSignatureSpan">(value, dateFormat, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.toTimeValue">module react-date-picker.toTimeValue</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.toTimeValue.default">
+            function <span class="apidocSignatureSpan">react-date-picker.toTimeValue.</span>default
+            <span class="apidocSignatureSpan">(_ref)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-date-picker.toUpperFirst">module react-date-picker.toUpperFirst</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-date-picker.toUpperFirst.default">
+            function <span class="apidocSignatureSpan">react-date-picker.toUpperFirst.</span>default
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker" id="apidoc.module.react-date-picker">module react-date-picker</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.Calendar" id="apidoc.element.react-date-picker.Calendar">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>Calendar
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Calendar(props) {
+  _classCallCheck(this, Calendar);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Calendar).call(this, props));
+
+  _this.state = {
+    timeFocused: false
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.Clock" id="apidoc.element.react-date-picker.Clock">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>Clock
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Clock(props) {
+  _classCallCheck(this, Clock);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Clock).call(this, props));
+
+  var time = void 0;
+  var seconds = void 0;
+
+  if (props.defaultSeconds) {
+    seconds = props.defaultSeconds == true ? Date.now() / 1000 : +props.defaultSeconds;
+  }
+
+  if (props.defaultTime) {
+    time = props.defaultTime == true ? Date.now() : +props.defaultTime;
+  }
+
+  // if (time === undefined) {
+  //   seconds = 0
+  // }
+
+  _this.state = {};
+
+  if (seconds !== undefined) {
+    _this.state.seconds = seconds;
+    _this.state.defaultSeconds = seconds;
+  }
+
+  if (time !== undefined) {
+    _this.state.time = time;
+    _this.state.defaultTime = time;
+  }
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.ClockInput" id="apidoc.element.react-date-picker.ClockInput">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>ClockInput
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ClockInput(props) {
+  _classCallCheck(this, ClockInput);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ClockInput).call(this, props));
+
+  var delay = props.changeDelay;
+  _this.throttleSetValue = delay == -1 ? _this.setValue : (0, _lodash2.default)(_this.setValue, delay);
+
+  _this.state = {
+    value: props.defaultValue || Date.now()
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DateEditor" id="apidoc.element.react-date-picker.DateEditor">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>DateEditor
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DateField(props) {
+  _classCallCheck(this, DateField);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(DateField).call(this, props));
+
+  _this.state = {
+    value: props.defaultValue === undefined ? '' : props.defaultValue,
+    expanded: props.defaultExpanded || false,
+    focused: false
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DateField" id="apidoc.element.react-date-picker.DateField">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>DateField
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DateField(props) {
+  _classCallCheck(this, DateField);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(DateField).call(this, props));
+
+  _this.state = {
+    value: props.defaultValue === undefined ? '' : props.defaultValue,
+    expanded: props.defaultExpanded || false,
+    focused: false
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DateFormatInput" id="apidoc.element.react-date-picker.DateFormatInput">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>DateFormatInput
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DateFormatInput(props) {
+  _classCallCheck(this, DateFormatInput);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(DateFormatInput).call(this, props));
+
+  var _parseFormat = (0, _parseFormat3.default)(props.dateFormat);
+
+  var positions = _parseFormat.positions;
+  var matches = _parseFormat.matches;
+
+  var defaultValue = props.defaultValue || Date.now();
+
+  var delay = props.changeDelay;
+  _this.throttleSetValue = delay == -1 ? _this.setValue : (0, _lodash2.default)(_this.setValue, delay);
+
+  var _this$getMinMax = _this.getMinMax(props);
+
+  var minDate = _this$getMinMax.minDate;
+  var maxDate = _this$getMinMax.maxDate;
+
+
+  _this.state = {
+    positions: positions,
+    matches: matches,
+    propsValue: props.value !== undefined,
+    value: defaultValue,
+    minDate: minDate,
+    maxDate: maxDate
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DateFormatSpinnerInput" id="apidoc.element.react-date-picker.DateFormatSpinnerInput">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>DateFormatSpinnerInput
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DateFormatSpinnerInput(props) {
+  _classCallCheck(this, DateFormatSpinnerInput);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(DateFormatSpinnerInput).call(this, props));
+
+  _this.state = {
+    focused: false
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DatePicker" id="apidoc.element.react-date-picker.DatePicker">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>DatePicker
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Calendar(props) {
+  _classCallCheck(this, Calendar);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Calendar).call(this, props));
+
+  _this.state = {
+    timeFocused: false
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView" id="apidoc.element.react-date-picker.DecadeView">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>DecadeView
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DecadeView(props) {
+  _classCallCheck(this, DecadeView);
+
+  var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(DecadeView).call(this, props));
+
+  _this2.state = getInitialState(props);
+  return _this2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.Footer" id="apidoc.element.react-date-picker.Footer">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>Footer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Footer() {
+  _classCallCheck(this, Footer);
+
+  return _possibleConstructorReturn(this, Object.getPrototypeOf(Footer).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.HistoryView" id="apidoc.element.react-date-picker.HistoryView">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>HistoryView
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HistoryView(props) {
+  _classCallCheck(this, HistoryView);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(HistoryView).call(this, props));
+
+  _this.state = (0, _DecadeView.getInitialState)(props);
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.MonthView" id="apidoc.element.react-date-picker.MonthView">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>MonthView
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MonthView(props) {
+  _classCallCheck(this, MonthView);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(MonthView).call(this, props));
+
+  _this.state = {
+    range: props.defaultRange,
+    date: props.defaultDate,
+    hoverRange: props.defaultHoverRange,
+    activeDate: props.defaultActiveDate,
+    viewDate: props.defaultViewDate
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.MultiMonthView" id="apidoc.element.react-date-picker.MultiMonthView">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>MultiMonthView
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MultiMonthView(props) {
+  _classCallCheck(this, MultiMonthView);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(MultiMonthView).call(this, props));
+
+  _this.state = {
+    hoverRange: null,
+    range: props.defaultRange,
+    date: props.defaultDate,
+    activeDate: props.defaultActiveDate,
+    viewDate: props.defaultViewDate
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.NavBar" id="apidoc.element.react-date-picker.NavBar">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>NavBar
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NavBar(props) {
+  _classCallCheck(this, NavBar);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(NavBar).call(this, props));
+
+  _this.state = {
+    viewDate: props.defaultViewDate
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.TimeInput" id="apidoc.element.react-date-picker.TimeInput">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>TimeInput
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function TimeInput(props) {
+  _classCallCheck(this, TimeInput);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TimeInput).call(this, props));
+
+  var format = props.format || props.timeFormat;
+
+  if (format.indexOf('hh') != 0 &amp;&amp; format.indexOf('HH') != 0) {
+    console.warn('Please start your time format with 2 digit hours.');
+  }
+
+  var hours24 = true;
+  var meridiem = format.indexOf('a') != -1 || format.indexOf('A') != -1;
+
+  if (format.indexOf('hh') == 0) {
+    hours24 = false;
+  }
+
+  var separator = props.separator || format &amp;&amp; format.length &gt; 2 ? format.charAt(2) : ':';
+  var hasSeconds = format.indexOf('ss') != -1;
+
+  if (hasSeconds &amp;&amp; format.charAt(5) != separator) {
+    console.warn('Expected minutes-seconds separator to be same as hours-minutes separator. (at position 5)');
+  }
+
+  var defaultValue = '00' + separator + '00';
+
+  if (hasSeconds) {
+    defaultValue += separator + '00';
+  }
+  if (meridiem) {
+    defaultValue += ' am';
+  }
+
+  _this.state = {
+    valueRange: props.valueRange || 0,
+    separator: separator,
+    hours24: hours24,
+    meridiem: meridiem,
+    value: props.defaultValue || defaultValue
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.TimePicker" id="apidoc.element.react-date-picker.TimePicker">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>TimePicker
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function TimePicker(props) {
+  _classCallCheck(this, TimePicker);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TimePicker).call(this, props));
+
+  _this.state = {};
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.TransitionView" id="apidoc.element.react-date-picker.TransitionView">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>TransitionView
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function TransitionView(props) {
+  _classCallCheck(this, TransitionView);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TransitionView).call(this, props));
+
+  var child = _react2.default.Children.toArray(_this.props.children)[0];
+  var childProps = child.props;
+
+  var viewDate = props.viewDate || props.defaultViewDate || props.defaultDate || props.date || childProps.viewDate || childProps
+.defaultViewDate || childProps.defaultDate || childProps.date;
+
+  var dateFormat = props.dateFormat || childProps.dateFormat;
+  var locale = props.locale || childProps.locale;
+
+  _this.state = {
+    rendered: false,
+    viewDate: _this.toMoment(viewDate, { dateFormat: dateFormat, locale: locale })
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.YearView" id="apidoc.element.react-date-picker.YearView">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>YearView
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function YearView(props) {
+  _classCallCheck(this, YearView);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(YearView).call(this, props));
+
+  _this.state = (0, _DecadeView.getInitialState)(props);
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.default" id="apidoc.element.react-date-picker.default">
+        function <span class="apidocSignatureSpan">react-date-picker.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MonthView(props) {
+  _classCallCheck(this, MonthView);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(MonthView).call(this, props));
+
+  _this.state = {
+    range: props.defaultRange,
+    date: props.defaultDate,
+    hoverRange: props.defaultHoverRange,
+    activeDate: props.defaultActiveDate,
+    viewDate: props.defaultViewDate
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.BasicMonthView" id="apidoc.module.react-date-picker.BasicMonthView">module react-date-picker.BasicMonthView</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.BasicMonthView.default" id="apidoc.element.react-date-picker.BasicMonthView.default">
+        function <span class="apidocSignatureSpan">react-date-picker.BasicMonthView.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BasicMonthView() {
+  _classCallCheck(this, BasicMonthView);
+
+  return _possibleConstructorReturn(this, Object.getPrototypeOf(BasicMonthView).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.BasicMonthView.getDaysInMonthView" id="apidoc.element.react-date-picker.BasicMonthView.getDaysInMonthView">
+        function <span class="apidocSignatureSpan">react-date-picker.BasicMonthView.</span>getDaysInMonthView
+        <span class="apidocSignatureSpan">(value, props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getDaysInMonthView(value, props) {
+  var locale = props.locale;
+  var dateFormat = props.dateFormat;
+
+  var toMomentParam = { locale: locale, dateFormat: dateFormat };
+
+  var first = (0, _toMoment2.default)(value, toMomentParam).startOf('month');
+  var beforeFirst = (0, _toMoment2.default)(value, toMomentParam).startOf('month').add(-1, 'days');
+
+  var start = getWeekStartMoment(first, props);
+
+  var result = [];
+
+  var i = 0;
+
+  if (beforeFirst.isBefore(start)
+  // and it doesn't start with a full week before and the
+  // week has at least 1 day from current month (default)
+   &amp;&amp; (props.alwaysShowPrevWeek || !start.isSame(first))) {
+    start.add(-1, 'weeks');
+  }
+
+  for (; i &lt; 42; i++) {
+    result.push((0, _toMoment2.default)(start, toMomentParam));
+    start.add(1, 'days');
+  }
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.BasicMonthView.getWeekStartDay" id="apidoc.element.react-date-picker.BasicMonthView.getWeekStartDay">
+        function <span class="apidocSignatureSpan">react-date-picker.BasicMonthView.</span>getWeekStartDay
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getWeekStartDay(props) {
+  var locale = props.locale;
+  var weekStartDay = props.weekStartDay;
+
+  if (weekStartDay == null) {
+    var localeData = props.localeData || _moment2.default.localeData(locale);
+    weekStartDay = localeData._week ? localeData._week.dow : null;
+  }
+
+  return weekStartDay;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.BasicMonthView.getWeekStartMoment" id="apidoc.element.react-date-picker.BasicMonthView.getWeekStartMoment">
+        function <span class="apidocSignatureSpan">react-date-picker.BasicMonthView.</span>getWeekStartMoment
+        <span class="apidocSignatureSpan">(value, props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getWeekStartMoment(value, props) {
+  var locale = props.locale;
+  var dateFormat = props.dateFormat;
+
+  var weekStartDay = getWeekStartDay(props);
+
+  return (0, _toMoment2.default)(value, {
+    locale: locale,
+    dateFormat: dateFormat
+  }).day(weekStartDay);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.BasicMonthView.getWeekendStartDay" id="apidoc.element.react-date-picker.BasicMonthView.getWeekendStartDay">
+        function <span class="apidocSignatureSpan">react-date-picker.BasicMonthView.</span>getWeekendStartDay
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getWeekendStartDay(props) {
+  var weekendStartDay = props.weekendStartDay;
+
+
+  if (weekendStartDay == null) {
+    return getWeekStartDay(props) + 5 % 7;
+  }
+
+  return weekendStartDay;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.Calendar" id="apidoc.module.react-date-picker.Calendar">module react-date-picker.Calendar</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.Calendar.default" id="apidoc.element.react-date-picker.Calendar.default">
+        function <span class="apidocSignatureSpan">react-date-picker.Calendar.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Calendar(props) {
+  _classCallCheck(this, Calendar);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Calendar).call(this, props));
+
+  _this.state = {
+    timeFocused: false
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.Clock" id="apidoc.module.react-date-picker.Clock">module react-date-picker.Clock</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.Clock.default" id="apidoc.element.react-date-picker.Clock.default">
+        function <span class="apidocSignatureSpan">react-date-picker.Clock.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Clock(props) {
+  _classCallCheck(this, Clock);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Clock).call(this, props));
+
+  var time = void 0;
+  var seconds = void 0;
+
+  if (props.defaultSeconds) {
+    seconds = props.defaultSeconds == true ? Date.now() / 1000 : +props.defaultSeconds;
+  }
+
+  if (props.defaultTime) {
+    time = props.defaultTime == true ? Date.now() : +props.defaultTime;
+  }
+
+  // if (time === undefined) {
+  //   seconds = 0
+  // }
+
+  _this.state = {};
+
+  if (seconds !== undefined) {
+    _this.state.seconds = seconds;
+    _this.state.defaultSeconds = seconds;
+  }
+
+  if (time !== undefined) {
+    _this.state.time = time;
+    _this.state.defaultTime = time;
+  }
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.ClockInput" id="apidoc.module.react-date-picker.ClockInput">module react-date-picker.ClockInput</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.ClockInput.default" id="apidoc.element.react-date-picker.ClockInput.default">
+        function <span class="apidocSignatureSpan">react-date-picker.ClockInput.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ClockInput(props) {
+  _classCallCheck(this, ClockInput);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ClockInput).call(this, props));
+
+  var delay = props.changeDelay;
+  _this.throttleSetValue = delay == -1 ? _this.setValue : (0, _lodash2.default)(_this.setValue, delay);
+
+  _this.state = {
+    value: props.defaultValue || Date.now()
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.DecadeView" id="apidoc.module.react-date-picker.DecadeView">module react-date-picker.DecadeView</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.confirm" id="apidoc.element.react-date-picker.DecadeView.confirm">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>confirm
+        <span class="apidocSignatureSpan">(date, event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _confirm(date, event) {
+  event.preventDefault();
+
+  if (this.props.confirm) {
+    return this.props.confirm(date, event);
+  }
+
+  var dateMoment = this.toMoment(date);
+  var timestamp = +dateMoment;
+
+  this.select({ dateMoment: dateMoment, timestamp: timestamp }, event);
+
+  if (this.props.onConfirm) {
+    this.props.onConfirm({ dateMoment: dateMoment, timestamp: timestamp });
+  }
+
+  return undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+return undefined;
+};
+
+var _confirm = function _confirm(date, event) {
+event.preventDefault();
+
+if (this.props.confirm) {
+  return this.props.<span class="apidocCodeKeywordSpan">confirm</span>(date, event);
+}
+
+var dateMoment = this.toMoment(date);
+var timestamp = +dateMoment;
+
+this.select({ dateMoment: dateMoment, timestamp: timestamp }, event);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.default" id="apidoc.element.react-date-picker.DecadeView.default">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DecadeView(props) {
+  _classCallCheck(this, DecadeView);
+
+  var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(DecadeView).call(this, props));
+
+  _this2.state = getInitialState(props);
+  return _this2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.getInitialState" id="apidoc.element.react-date-picker.DecadeView.getInitialState">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>getInitialState
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getInitialState(props) {
+  return {
+    date: props.defaultDate,
+    activeDate: props.defaultActiveDate,
+    viewDate: props.defaultViewDate
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.gotoViewDate" id="apidoc.element.react-date-picker.DecadeView.gotoViewDate">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>gotoViewDate
+        <span class="apidocSignatureSpan">(_ref5)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _gotoViewDate(_ref5) {
+  var dateMoment = _ref5.dateMoment;
+  var timestamp = _ref5.timestamp;
+
+  if (!timestamp) {
+    timestamp = dateMoment == null ? null : +dateMoment;
+  }
+
+  this.onViewDateChange({ dateMoment: dateMoment, timestamp: timestamp });
+  this.onActiveDateChange({ dateMoment: dateMoment, timestamp: timestamp });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return this.props.select({ dateMoment: dateMoment, timestamp: timestamp }, event);
+}
+
+if (!timestamp) {
+  timestamp = +dateMoment;
+}
+
+this.<span class="apidocCodeKeywordSpan">gotoViewDate</span>({ dateMoment: dateMoment, timestamp: timestamp });
+this.onChange({ dateMoment: dateMoment, timestamp: timestamp }, event);
+
+return undefined;
+};
+
+var _confirm = function _confirm(date, event) {
+event.preventDefault();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.isDateInMinMax" id="apidoc.element.react-date-picker.DecadeView.isDateInMinMax">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>isDateInMinMax
+        <span class="apidocSignatureSpan">(timestamp, props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isDateInMinMax(timestamp, props) {
+  if (props.minDate &amp;&amp; timestamp &lt; props.minDate) {
+    return false;
+  }
+
+  if (props.maxDate &amp;&amp; timestamp &gt; props.maxDate) {
+    return false;
+  }
+
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.isValidActiveDate" id="apidoc.element.react-date-picker.DecadeView.isValidActiveDate">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>isValidActiveDate
+        <span class="apidocSignatureSpan">(timestamp, props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isValidActiveDate(timestamp, props) {
+  if (!props) {
+    throw new Error('props is mandatory in isValidActiveDate');
+  }
+
+  return isDateInMinMax(timestamp, props);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }, {
+    key: 'onActiveDateChange',
+    value: function onActiveDateChange(_ref6) {
+var dateMoment = _ref6.dateMoment;
+var timestamp = _ref6.timestamp;
+
+var valid = this.views.reduce(function (isValid, view) {
+  return isValid &amp;&amp; view.<span class="apidocCodeKeywordSpan">isValidActiveDate</span>(timestamp);
+}, true);
+
+if (!valid) {
+  return;
+}
+
+var props = this.p;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.navigate" id="apidoc.element.react-date-picker.DecadeView.navigate">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>navigate
+        <span class="apidocSignatureSpan">(direction, event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _navigate(direction, event) {
+  var _this = this;
+
+  var props = this.p;
+
+  var getNavigationDate = function getNavigationDate(dir, date, dateFormat) {
+    var mom = _moment2.default.isMoment(date) ? date : _this.toMoment(date, dateFormat);
+
+    if (typeof dir == 'function') {
+      return dir(mom);
+    }
+
+    return mom;
+  };
+
+  if (props.navigate) {
+    return props.navigate(direction, event, getNavigationDate);
+  }
+
+  event.preventDefault();
+
+  if (props.activeDate) {
+    var nextMoment = getNavigationDate(direction, props.activeDate);
+
+    this.gotoViewDate({ dateMoment: nextMoment });
+  }
+
+  return undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return dir(mom);
+  }
+
+  return mom;
+};
+
+if (props.navigate) {
+  return props.<span class="apidocCodeKeywordSpan">navigate</span>(direction, event, getNavigationDate);
+}
+
+event.preventDefault();
+
+if (props.activeDate) {
+  var nextMoment = getNavigationDate(direction, props.activeDate);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.onActiveDateChange" id="apidoc.element.react-date-picker.DecadeView.onActiveDateChange">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>onActiveDateChange
+        <span class="apidocSignatureSpan">(_ref2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _onActiveDateChange(_ref2) {
+  var dateMoment = _ref2.dateMoment;
+  var timestamp = _ref2.timestamp;
+
+  if (!isValidActiveDate(timestamp, this.p)) {
+    return;
+  }
+
+  if (this.props.activeDate === undefined) {
+    this.setState({
+      activeDate: timestamp
+    });
+  }
+
+  if (this.props.onActiveDateChange) {
+    var dateString = this.format(dateMoment);
+    this.props.onActiveDateChange(dateString, { dateMoment: dateMoment, timestamp: timestamp, dateString: dateString });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  this.setState({
+    activeDate: timestamp
+  });
+}
+
+if (this.props.onActiveDateChange) {
+  var dateString = this.format(dateMoment);
+  this.props.<span class="apidocCodeKeywordSpan">onActiveDateChange</span>(dateString, { dateMoment: dateMoment, timestamp: timestamp
+, dateString: dateString });
+}
+};
+
+var _onViewDateChange = function _onViewDateChange(_ref3) {
+var dateMoment = _ref3.dateMoment;
+var timestamp = _ref3.timestamp;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.onChange" id="apidoc.element.react-date-picker.DecadeView.onChange">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>onChange
+        <span class="apidocSignatureSpan">(_ref4, event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _onChange(_ref4, event) {
+  var dateMoment = _ref4.dateMoment;
+  var timestamp = _ref4.timestamp;
+
+  if (this.props.date === undefined) {
+    this.setState({
+      date: timestamp
+    });
+  }
+
+  if (this.props.onChange) {
+    var dateString = this.format(dateMoment);
+    this.props.onChange(dateString, { dateMoment: dateMoment, timestamp: timestamp, dateString: dateString }, event);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var view = this.view;
+    var moment = view.p.moment;
+
+    if (moment == null) {
+      return;
+    }
+
+    view.<span class="apidocCodeKeywordSpan">onChange</span>({
+      dateMoment: moment,
+      timestamp: +moment
+    });
+  }
+}, {
+  key: 'onChange',
+  value: function onChange(dateString, _ref3, event) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.onKeyDown" id="apidoc.element.react-date-picker.DecadeView.onKeyDown">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>onKeyDown
+        <span class="apidocSignatureSpan">(event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onKeyDown = function (event) {
+  var key = event.key;
+
+  if (this.props.onKeyDown) {
+    if (this.props.onKeyDown(event) === false) {
+      return;
+    }
+  }
+
+  if (key == 'Enter' &amp;&amp; this.p.activeDate) {
+    this.confirm(this.p.activeDate, event);
+  }
+
+  var navKeys = this.p.navKeys || _navKeys2.default;
+  var dir = navKeys[key];
+
+  if (!dir) {
+    return;
+  }
+
+  event.preventDefault();
+  this.navigate(dir, event);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  key: 'onKeyDown',
+  value: function onKeyDown(event) {
+    if (event.key == 'Escape') {
+      return this.onCancelClick();
+    }
+
+    if (this.decadeView) {
+      this.decadeView.<span class="apidocCodeKeywordSpan">onKeyDown</span>(event);
+    }
+
+    return undefined;
+  }
+}, {
+  key: 'confirm',
+  value: function confirm(date, event) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.onViewDateChange" id="apidoc.element.react-date-picker.DecadeView.onViewDateChange">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>onViewDateChange
+        <span class="apidocSignatureSpan">(_ref3)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _onViewDateChange(_ref3) {
+  var dateMoment = _ref3.dateMoment;
+  var timestamp = _ref3.timestamp;
+
+  if (dateMoment &amp;&amp; timestamp === undefined) {
+    timestamp = +dateMoment;
+  }
+
+  if (this.props.constrainViewDate &amp;&amp; !isDateInMinMax(timestamp, this.p)) {
+    return;
+  }
+
+  if (this.props.viewDate === undefined) {
+    this.setState({
+      viewDate: timestamp
+    });
+  }
+
+  if (this.props.onViewDateChange) {
+    var dateString = this.format(dateMoment);
+    this.props.onViewDateChange(dateString, { dateMoment: dateMoment, dateString: dateString, timestamp: timestamp });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  this.setState({
+    viewDate: timestamp
+  });
+}
+
+if (this.props.onViewDateChange) {
+  var dateString = this.format(dateMoment);
+  this.props.<span class="apidocCodeKeywordSpan">onViewDateChange</span>(dateString, { dateMoment: dateMoment, dateString: dateString
+, timestamp: timestamp });
+}
+};
+
+var _onChange = function _onChange(_ref4, event) {
+var dateMoment = _ref4.dateMoment;
+var timestamp = _ref4.timestamp;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.prepareActiveDate" id="apidoc.element.react-date-picker.DecadeView.prepareActiveDate">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>prepareActiveDate
+        <span class="apidocSignatureSpan">(props, state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function prepareActiveDate(props, state) {
+  var activeDate = props.activeDate === undefined ? state.activeDate || prepareDate(props, state) : props.activeDate;
+
+  return activeDate;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.prepareDate" id="apidoc.element.react-date-picker.DecadeView.prepareDate">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>prepareDate
+        <span class="apidocSignatureSpan">(props, state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function prepareDate(props, state) {
+  return props.date === undefined ? state.date : props.date;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    key: 'render',
+    value: function render() {
+var _this2 = this;
+
+var props = this.p = (0, _objectAssign2.default)({}, this.props);
+var dateFormat = props.dateFormat.toLowerCase();
+
+props.date = this.<span class="apidocCodeKeywordSpan">prepareDate</span>(props);
+if (props.showClock === undefined) {
+  props.showClock = dateFormat.indexOf('k') != -1 || dateFormat.indexOf('h') != -1;
+}
+
+var timeFormat = dateFormat.substring(dateFormat.toLowerCase().indexOf('hh'));
+
+props.timeFormat = timeFormat;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.prepareDateProps" id="apidoc.element.react-date-picker.DecadeView.prepareDateProps">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>prepareDateProps
+        <span class="apidocSignatureSpan">(props, state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function prepareDateProps(props, state) {
+  var result = {};
+
+  (0, _objectAssign2.default)(result, prepareMinMax(props));
+
+  result.date = prepareDate(props, state);
+  result.viewDate = prepareViewDate(props, state);
+
+  var activeDate = prepareActiveDate(props, state);
+
+  if (result.date != null) {
+    result.moment = (0, _toMoment3.default)(result.date, props);
+    if (props.adjustDateStartOf) {
+      result.moment.startOf(props.adjustDateStartOf);
+    }
+    result.timestamp = +result.moment;
+  }
+
+  if (activeDate) {
+    result.activeMoment = (0, _toMoment3.default)(activeDate, props);
+    if (props.adjustDateStartOf) {
+      result.activeMoment.startOf(props.adjustDateStartOf);
+    }
+    result.activeDate = +result.activeMoment;
+  }
+
+  var viewMoment = (0, _toMoment3.default)(result.viewDate, props);
+
+  if (props.constrainViewDate &amp;&amp; result.minDate != null &amp;&amp; viewMoment.isBefore(result.minDate)) {
+    result.minConstrained = true;
+    viewMoment = (0, _toMoment3.default)(result.minDate, props);
+  }
+
+  if (props.constrainViewDate &amp;&amp; result.maxDate != null &amp;&amp; viewMoment.isAfter(result.maxDate)) {
+    result.maxConstrained = true;
+    viewMoment = (0, _toMoment3.default)(result.maxDate, props);
+  }
+
+  if (props.adjustDateStartOf) {
+    viewMoment.startOf(props.adjustDateStartOf);
+  }
+
+  result.viewMoment = viewMoment;
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.prepareMinMax" id="apidoc.element.react-date-picker.DecadeView.prepareMinMax">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>prepareMinMax
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function prepareMinMax(props) {
+  var minDate = props.minDate;
+  var maxDate = props.maxDate;
+
+
+  var result = {};
+
+  if (minDate != null) {
+    result.minDateMoment = (0, _toMoment3.default)(props.minDate, props).startOf(props.adjustMinDateStartOf);
+
+    result.minDate = +result.minDateMoment;
+  }
+
+  if (maxDate != null) {
+    result.maxDateMoment = (0, _toMoment3.default)(props.maxDate, props).endOf(props.adjustMaxDateStartOf);
+
+    result.maxDate = +result.maxDateMoment;
+  }
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.prepareViewDate" id="apidoc.element.react-date-picker.DecadeView.prepareViewDate">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>prepareViewDate
+        <span class="apidocSignatureSpan">(props, state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function prepareViewDate(props, state) {
+  var viewDate = props.viewDate === undefined ? state.viewDate : props.viewDate;
+
+  if (!viewDate &amp;&amp; props.date) {
+    return props.date;
+  }
+
+  return viewDate;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+return props.viewDate === undefined ? this.state.viewDate : props.viewDate;
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+var props = this.p = (0, _objectAssign2.default)({}, this.props);
+
+var viewMoment = props.viewMoment = props.viewMoment || this.toMoment(this.<span class="apidocCodeKeywordSpan">prepareViewDate<!--
+span-->(props));
+
+props.historyViewEnabled = props.expandedHistoryView || props.enableHistoryView;
+
+var secondary = props.secondary;
+
+var className = (0, _join2.default)(props.className, bem(), bem(null, 'theme-' + props.theme), props.historyViewEnabled
+ &amp;&amp; bem(null, 'with-history-view'));
+...</span></pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.DecadeView.select" id="apidoc.element.react-date-picker.DecadeView.select">
+        function <span class="apidocSignatureSpan">react-date-picker.DecadeView.</span>select
+        <span class="apidocSignatureSpan">(_ref, event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _select(_ref, event) {
+  var dateMoment = _ref.dateMoment;
+  var timestamp = _ref.timestamp;
+
+  if (this.props.select) {
+    return this.props.select({ dateMoment: dateMoment, timestamp: timestamp }, event);
+  }
+
+  if (!timestamp) {
+    timestamp = +dateMoment;
+  }
+
+  this.gotoViewDate({ dateMoment: dateMoment, timestamp: timestamp });
+  this.onChange({ dateMoment: dateMoment, timestamp: timestamp }, event);
+
+  return undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+var _select = function _select(_ref, event) {
+var dateMoment = _ref.dateMoment;
+var timestamp = _ref.timestamp;
+
+if (this.props.select) {
+  return this.props.<span class="apidocCodeKeywordSpan">select</span>({ dateMoment: dateMoment, timestamp: timestamp }, event);
+}
+
+if (!timestamp) {
+  timestamp = +dateMoment;
+}
+
+this.gotoViewDate({ dateMoment: dateMoment, timestamp: timestamp });
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.Footer" id="apidoc.module.react-date-picker.Footer">module react-date-picker.Footer</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.Footer.Button" id="apidoc.element.react-date-picker.Footer.Button">
+        function <span class="apidocSignatureSpan">react-date-picker.Footer.</span>Button
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Button(props) {
+  var disabledClassName = props.disabled ? buttonClassName + '--disabled' : '';
+
+  var className = (props.className || '') + ' ' + buttonClassName + ' ' + disabledClassName;
+  return _react2.default.createElement('button', _extends({
+    tabIndex: -1
+  }, props, {
+    className: className
+  }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.Footer.default" id="apidoc.element.react-date-picker.Footer.default">
+        function <span class="apidocSignatureSpan">react-date-picker.Footer.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Footer() {
+  _classCallCheck(this, Footer);
+
+  return _possibleConstructorReturn(this, Object.getPrototypeOf(Footer).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.HistoryView" id="apidoc.module.react-date-picker.HistoryView">module react-date-picker.HistoryView</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.HistoryView.default" id="apidoc.element.react-date-picker.HistoryView.default">
+        function <span class="apidocSignatureSpan">react-date-picker.HistoryView.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HistoryView(props) {
+  _classCallCheck(this, HistoryView);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(HistoryView).call(this, props));
+
+  _this.state = (0, _DecadeView.getInitialState)(props);
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.MultiMonthView" id="apidoc.module.react-date-picker.MultiMonthView">module react-date-picker.MultiMonthView</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.MultiMonthView.default" id="apidoc.element.react-date-picker.MultiMonthView.default">
+        function <span class="apidocSignatureSpan">react-date-picker.MultiMonthView.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MultiMonthView(props) {
+  _classCallCheck(this, MultiMonthView);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(MultiMonthView).call(this, props));
+
+  _this.state = {
+    hoverRange: null,
+    range: props.defaultRange,
+    date: props.defaultDate,
+    activeDate: props.defaultActiveDate,
+    viewDate: props.defaultViewDate
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.MultiMonthView.renderNavBar" id="apidoc.element.react-date-picker.MultiMonthView.renderNavBar">
+        function <span class="apidocSignatureSpan">react-date-picker.MultiMonthView.</span>renderNavBar
+        <span class="apidocSignatureSpan">(config, navBarProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _renderNavBar(config, navBarProps) {
+  var props = this.props;
+  var index = config.index;
+  var viewMoment = config.viewMoment;
+
+
+  navBarProps = (0, _objectAssign2.default)({}, navBarProps, {
+    secondary: true,
+
+    minDate: config.minDate || props.minDate,
+    maxDate: config.maxDate || props.maxDate,
+
+    renderNavNext: config.renderHiddenNav || this.renderHiddenNav,
+    renderNavPrev: config.renderHiddenNav || this.renderHiddenNav,
+
+    viewMoment: viewMoment,
+
+    onViewDateChange: config.onViewDateChange || this.onNavViewDateChange,
+    onUpdate: config.onUpdate || this.updateViewMoment,
+
+    enableHistoryView: props.enableHistoryView
+  });
+
+  if (index == 0) {
+    delete navBarProps.renderNavPrev;
+  }
+
+  if (index == props.perRow - 1) {
+    delete navBarProps.renderNavNext;
+  }
+
+  return _react2.default.createElement(_NavBar2.default, navBarProps);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  secondary: true,
+  viewDate: this.nextViewDate || this.viewDate,
+  onViewDateChange: onViewDateChange,
+  multiView: multiView
+};
+
+if (props.navigation) {
+  navBar = this.<span class="apidocCodeKeywordSpan">renderNavBar</span>((0, _objectAssign2.default)({}, navBarProps, { mainNavBar
+: true }));
+}
+
+var footer = void 0;
+
+if (props.footer) {
+  footer = (0, _MonthView.renderFooter)(props, props.insideField ? props : this.view);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.NavBar" id="apidoc.module.react-date-picker.NavBar">module react-date-picker.NavBar</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.NavBar.default" id="apidoc.element.react-date-picker.NavBar.default">
+        function <span class="apidocSignatureSpan">react-date-picker.NavBar.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NavBar(props) {
+  _classCallCheck(this, NavBar);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(NavBar).call(this, props));
+
+  _this.state = {
+    viewDate: props.defaultViewDate
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.TimePicker" id="apidoc.module.react-date-picker.TimePicker">module react-date-picker.TimePicker</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.TimePicker.default" id="apidoc.element.react-date-picker.TimePicker.default">
+        function <span class="apidocSignatureSpan">react-date-picker.TimePicker.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function TimePicker(props) {
+  _classCallCheck(this, TimePicker);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TimePicker).call(this, props));
+
+  _this.state = {};
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.TransitionView" id="apidoc.module.react-date-picker.TransitionView">module react-date-picker.TransitionView</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.TransitionView.default" id="apidoc.element.react-date-picker.TransitionView.default">
+        function <span class="apidocSignatureSpan">react-date-picker.TransitionView.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function TransitionView(props) {
+  _classCallCheck(this, TransitionView);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TransitionView).call(this, props));
+
+  var child = _react2.default.Children.toArray(_this.props.children)[0];
+  var childProps = child.props;
+
+  var viewDate = props.viewDate || props.defaultViewDate || props.defaultDate || props.date || childProps.viewDate || childProps
+.defaultViewDate || childProps.defaultDate || childProps.date;
+
+  var dateFormat = props.dateFormat || childProps.dateFormat;
+  var locale = props.locale || childProps.locale;
+
+  _this.state = {
+    rendered: false,
+    viewDate: _this.toMoment(viewDate, { dateFormat: dateFormat, locale: locale })
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.YearView" id="apidoc.module.react-date-picker.YearView">module react-date-picker.YearView</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.YearView.default" id="apidoc.element.react-date-picker.YearView.default">
+        function <span class="apidocSignatureSpan">react-date-picker.YearView.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function YearView(props) {
+  _classCallCheck(this, YearView);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(YearView).call(this, props));
+
+  _this.state = (0, _DecadeView.getInitialState)(props);
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.assignDefined" id="apidoc.module.react-date-picker.assignDefined">module react-date-picker.assignDefined</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.assignDefined.default" id="apidoc.element.react-date-picker.assignDefined.default">
+        function <span class="apidocSignatureSpan">react-date-picker.assignDefined.</span>default
+        <span class="apidocSignatureSpan">(target)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (target) {
+  for (var _len = arguments.length, args = Array(_len &gt; 1 ? _len - 1 : 0), _key = 1; _key &lt; _len; _key++) {
+    args[_key - 1] = arguments[_key];
+  }
+
+  return _objectAssign2.default.apply(undefined, [target].concat(_toConsumableArray(args.map(filter))));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.bemFactory" id="apidoc.module.react-date-picker.bemFactory">module react-date-picker.bemFactory</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.bemFactory.default" id="apidoc.element.react-date-picker.bemFactory.default">
+        function <span class="apidocSignatureSpan">react-date-picker.bemFactory.</span>default
+        <span class="apidocSignatureSpan">(className)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (className) {
+
+  return function (element, modifier) {
+    var el = element ? '-' + element : '';
+    var mod = modifier ? '--' + modifier : '';
+
+    return '' + className + el + mod;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.clamp" id="apidoc.module.react-date-picker.clamp">module react-date-picker.clamp</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.clamp.clampHour" id="apidoc.element.react-date-picker.clamp.clampHour">
+        function <span class="apidocSignatureSpan">react-date-picker.clamp.</span>clampHour
+        <span class="apidocSignatureSpan">(value, _ref2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function clampHour(value, _ref2) {
+  var max = _ref2.max;
+  var min = _ref2.min;
+  var circular = _ref2.circular;
+
+  return clamp(value, { min: min || 0, max: max || 23, circular: circular });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.clamp.clampMinute" id="apidoc.element.react-date-picker.clamp.clampMinute">
+        function <span class="apidocSignatureSpan">react-date-picker.clamp.</span>clampMinute
+        <span class="apidocSignatureSpan">(value, _ref3)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function clampMinute(value, _ref3) {
+  var circular = _ref3.circular;
+
+  return clamp(value, { min: 0, max: 59, circular: circular });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.clamp.clampNamed" id="apidoc.element.react-date-picker.clamp.clampNamed">
+        function <span class="apidocSignatureSpan">react-date-picker.clamp.</span>clampNamed
+        <span class="apidocSignatureSpan">(name, value, _ref5)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function clampNamed(name, value, _ref5) {
+  var circular = _ref5.circular;
+  var max = _ref5.max;
+  var min = _ref5.min;
+
+  return MAP[name](value, { circular: circular, max: max, min: min });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.clamp.clampSecond" id="apidoc.element.react-date-picker.clamp.clampSecond">
+        function <span class="apidocSignatureSpan">react-date-picker.clamp.</span>clampSecond
+        <span class="apidocSignatureSpan">(value, _ref4)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function clampSecond(value, _ref4) {
+  var circular = _ref4.circular;
+
+  return clamp(value, { min: 0, max: 59, circular: circular });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.clamp.default" id="apidoc.element.react-date-picker.clamp.default">
+        function <span class="apidocSignatureSpan">react-date-picker.clamp.</span>default
+        <span class="apidocSignatureSpan">(value, _ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function clamp(value, _ref) {
+  var min = _ref.min;
+  var max = _ref.max;
+  var _ref$circular = _ref.circular;
+  var circular = _ref$circular === undefined ? true : _ref$circular;
+
+  return value &lt; min ? circular ? max : min : value &gt; max ? circular ? min : max : value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.clampRange" id="apidoc.module.react-date-picker.clampRange">module react-date-picker.clampRange</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.clampRange.default" id="apidoc.element.react-date-picker.clampRange.default">
+        function <span class="apidocSignatureSpan">react-date-picker.clampRange.</span>default
+        <span class="apidocSignatureSpan">(range)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (range) {
+  if (range[1] &amp;&amp; range[0].isAfter(range[1])) {
+    range = [range[1], range[0]];
+  }
+
+  return range;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.formats" id="apidoc.module.react-date-picker.formats">module react-date-picker.formats</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.formats.getFormats" id="apidoc.element.react-date-picker.formats.getFormats">
+        function <span class="apidocSignatureSpan">react-date-picker.formats.</span>getFormats
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getFormats() {
+  return {
+    YYYY: {
+      min: 100,
+      max: 9999,
+      default: '0100',
+      handleDelete: handleDelete,
+      handleBackspace: handleBackspace,
+      handleArrow: handleArrow,
+      handlePageUp: handlePage,
+      handlePageDown: handlePage,
+      handleUnidentified: handleYearUnidentified
+    },
+
+    // YY: {
+    //   default: '00'
+    // },
+
+    // M: { min: 1, max: 12, default: '1', maxLen: 2 },
+    MM: {
+      min: 1,
+      max: 12,
+      default: '01',
+      handleDelete: handleDelete,
+      handleBackspace: handleBackspace,
+      handlePageUp: handlePageLeftPad,
+      handlePageDown: handlePageLeftPad,
+      handleUnidentified: handleUnidentifiedLeftPad,
+      handleArrow: handleArrowLeftPad
+    },
+
+    // D: { min: 1, max: 31, default: '1', maxLen: 2 },
+    DD: {
+      min: 1,
+      max: 31,
+      default: '01',
+      handlePageUp: handlePageLeftPad,
+      handlePageDown: handlePageLeftPad,
+      handleDelete: handleDelete,
+      handleBackspace: handleBackspace,
+      handleUnidentified: handleUnidentifiedLeftPad,
+      handleArrow: handleArrowLeftPad
+    },
+
+    // H: {
+    //   min: 0, max: 23, default: '0', maxLen: 2,
+    //   handleDelete,
+    //   handleBackspace,
+    //   handleArrow: handleArrowLeftPad,
+    //   handlePageUp: handlePageLeftPad,
+    //   handlePageDown: handlePageLeftPad
+    // },
+    HH: {
+      time: true,
+      min: 0, max: 23, default: '00',
+      handleDelete: handleDelete,
+      handleBackspace: handleBackspace,
+      handleUnidentified: handleUnidentifiedLeftPad,
+      handleArrow: handleArrowLeftPad,
+      handlePageUp: handlePageLeftPad,
+      handlePageDown: handlePageLeftPad
+    },
+
+    // h: { min: 1, max: 12, default: '1', maxLen: 2,
+    //   handleArrow: handleArrowLeftPad,
+    //   handlePageUp: handlePageLeftPad,
+    //   handlePageDown: handlePageLeftPad
+    // },
+    hh: { min: 1, max: 12, default: '01',
+      time: true,
+      handleDelete: handleDelete,
+      handleBackspace: handleBackspace,
+      handleUnidentified: handleUnidentifiedLeftPad,
+      handleArrow: handleArrowLeftPad,
+      handlePageUp: handlePageLeftPad,
+      handlePageDown: handlePageLeftPad
+    },
+
+    a: {
+      time: true,
+      length: 2,
+      default: 'am',
+      handleArrow: handleMeridiemArrow,
+      handlePageUp: handleMeridiemArrow,
+      handlePageDown: handleMeridiemArrow,
+      handleDelete: handleMeridiemDelete,
+      handleBackspace: handleMeridiemBackspace
+    },
+    A: {
+      length: 2,
+      time: true,
+      default: 'AM', upper: true,
+      handleArrow: handleMeridiemArrow,
+      handlePageUp: handleMeridiemArrow,
+      handlePageDown: handleMeridiemArrow,
+      handleDelete: handleMeridiemDelete,
+      handleBackspace: handleMeridiemBackspace
+    },
+
+    // m: { min: 0, max: 59, default: '0', maxLen: 2 },
+    mm: { min: 0, max: 59, default: '00',
+      time: true,
+      handleDelete: handleDelete,
+      handleBackspace: handleBackspace,
+      handleUnidentified: handleUnidentifiedLeftPad,
+      handleArrow: handleArrowLeftPad,
+      handlePageUp: handlePageLeftPad,
+      handlePageDown: handlePageLeftPad
+    },
+
+    // s: { min: 0, max: 59, default: '0' },
+    ss: {
+      time: true,
+      min: 0, max: 59, default: '00',
+      handleDelete: handleDelete,
+      handleBackspace: handleBackspace,
+      handleUnidentified: handleUnidentifiedLeftPad,
+      handleArrow: handleArrowLeftPad,
+      handlePageUp: handlePageLeftPad,
+      handlePageDown: handlePageLeftPad
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.forwardTime" id="apidoc.module.react-date-picker.forwardTime">module react-date-picker.forwardTime</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.forwardTime.default" id="apidoc.element.react-date-picker.forwardTime.default">
+        function <span class="apidocSignatureSpan">react-date-picker.forwardTime.</span>default
+        <span class="apidocSignatureSpan">(from, to)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (from, to) {
+  if (from) {
+    ['hour', 'minute', 'second', 'millisecond'].forEach(function (part) {
+      to.set(part, from.get ? from.get(part) : from[part]);
+    });
+  }
+
+  return to;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.getNewValue" id="apidoc.module.react-date-picker.getNewValue">module react-date-picker.getNewValue</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.getNewValue.default" id="apidoc.element.react-date-picker.getNewValue.default">
+        function <span class="apidocSignatureSpan">react-date-picker.getNewValue.</span>default
+        <span class="apidocSignatureSpan">(_ref10)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (_ref10) {
+  var oldValue = _ref10.oldValue;
+  var range = _ref10.range;
+  var event = _ref10.event;
+  var _ref10$separator = _ref10.separator;
+  var separator = _ref10$separator === undefined ? ':' : _ref10$separator;
+  var incrementNext = _ref10.incrementNext;
+  var circular = _ref10.circular;
+  var propagate = _ref10.propagate;
+  var hours24 = _ref10.hours24;
+  var meridiem = _ref10.meridiem;
+
+
+  var newChar = String.fromCharCode(event.which);
+  var start = range.start;
+  var end = range.end;
+  var key = event.key;
+
+
+  if (key == 'Delete' || key == 'Backspace') {
+    return getValueOnDelete({
+      key: key,
+      oldValue: oldValue,
+      range: range,
+      separator: separator,
+      meridiem: meridiem
+    });
+  }
+
+  var dir = ARROWS[key];
+
+  if (dir) {
+    return getValueOnDirection({
+      hours24: hours24,
+      meridiem: meridiem,
+      dir: dir,
+      oldValue: oldValue,
+      range: range,
+      circular: circular,
+      propagate: propagate,
+      separator: separator,
+      incrementNext: incrementNext
+    });
+  }
+
+  if (key == 'Unidentified' &amp;&amp; newChar * 1 == newChar) {
+    return getValueOnNumber({
+      num: newChar * 1,
+      circular: circular,
+      separator: separator,
+      oldValue: oldValue,
+      range: range,
+      meridiem: meridiem
+    });
+  }
+
+  return {
+    value: oldValue
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.getSelectionEnd" id="apidoc.module.react-date-picker.getSelectionEnd">module react-date-picker.getSelectionEnd</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.getSelectionEnd.default" id="apidoc.element.react-date-picker.getSelectionEnd.default">
+        function <span class="apidocSignatureSpan">react-date-picker.getSelectionEnd.</span>default
+        <span class="apidocSignatureSpan">(o)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getSelectionEnd(o) {
+    if (o.createTextRange &amp;&amp; !global.getSelection) {
+        var r = document.selection.createRange().duplicate();
+        r.moveStart('character', -o.value.length);
+        return r.text.length;
+    } else return o.selectionEnd;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.getSelectionStart" id="apidoc.module.react-date-picker.getSelectionStart">module react-date-picker.getSelectionStart</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.getSelectionStart.default" id="apidoc.element.react-date-picker.getSelectionStart.default">
+        function <span class="apidocSignatureSpan">react-date-picker.getSelectionStart.</span>default
+        <span class="apidocSignatureSpan">(o)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getSelectionStart(o) {
+    if (o.createTextRange &amp;&amp; !global.getSelection) {
+        var r = document.selection.createRange().duplicate();
+        r.moveEnd('character', o.value.length);
+        if (r.text == '') return o.value.length;
+        return o.value.lastIndexOf(r.text);
+    } else return o.selectionStart;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.getTransitionEnd" id="apidoc.module.react-date-picker.getTransitionEnd">module react-date-picker.getTransitionEnd</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.getTransitionEnd.default" id="apidoc.element.react-date-picker.getTransitionEnd.default">
+        function <span class="apidocSignatureSpan">react-date-picker.getTransitionEnd.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function () {
+  if (!EL) {
+    EL = document.createElement('p');
+  }
+
+  if (RESULT) {
+    return RESULT;
+  }
+
+  for (var transition in map) {
+    if (null != EL.style[transition]) {
+      RESULT = map[transition];
+      break;
+    }
+  }
+
+  return RESULT;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.getWeekDayNames" id="apidoc.module.react-date-picker.getWeekDayNames">module react-date-picker.getWeekDayNames</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.getWeekDayNames.default" id="apidoc.element.react-date-picker.getWeekDayNames.default">
+        function <span class="apidocSignatureSpan">react-date-picker.getWeekDayNames.</span>default
+        <span class="apidocSignatureSpan">(startDay, locale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getWeekDayNames(startDay, locale) {
+  var weekDays = void 0;
+
+  if (locale) {
+    var data = _moment2.default.localeData(locale);
+
+    weekDays = data &amp;&amp; data._weekdaysShort ? data._weekdaysShort : weekDays;
+  }
+
+  weekDays = (weekDays || _moment2.default.weekdaysShort()).concat();
+
+  var names = weekDays;
+  var index = startDay == null ? DEFAULT_WEEK_START_DAY : startDay;
+
+  while (index &gt; 0) {
+    names.push(names.shift());
+    index--;
+  }
+
+  return names;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.index" id="apidoc.module.react-date-picker.index">module react-date-picker.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.index.default" id="apidoc.element.react-date-picker.index.default">
+        function <span class="apidocSignatureSpan">react-date-picker.index.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DateField(props) {
+  _classCallCheck(this, DateField);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(DateField).call(this, props));
+
+  _this.state = {
+    value: props.defaultValue === undefined ? '' : props.defaultValue,
+    expanded: props.defaultExpanded || false,
+    focused: false
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.isInRange" id="apidoc.module.react-date-picker.isInRange">module react-date-picker.isInRange</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.isInRange.default" id="apidoc.element.react-date-picker.isInRange.default">
+        function <span class="apidocSignatureSpan">react-date-picker.isInRange.</span>default
+        <span class="apidocSignatureSpan">(moment, configOrRange)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (moment, configOrRange) {
+
+  var range = configOrRange;
+  var inclusive = true;
+
+  if (!Array.isArray(configOrRange) &amp;&amp; (typeof configOrRange === 'undefined' ? 'undefined' : _typeof(configOrRange)) == 'object') {
+    range = configOrRange.range;
+
+    if (configOrRange.inclusive !== undefined) {
+      inclusive = !!configOrRange.inclusive;
+    }
+  }
+
+  var start = range[0];
+  var end = range.length &gt;= 2 &amp;&amp; range[range.length - 1];
+
+  if (!moment) {
+    return false;
+  }
+
+  if (start &amp;&amp; end) {
+    var insideRange = start.isBefore(moment) &amp;&amp; end.isAfter(moment);
+
+    return inclusive ? insideRange || start.isSame(moment) || end.isSame(moment) : insideRange;
+  }
+
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.join" id="apidoc.module.react-date-picker.join">module react-date-picker.join</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.join.default" id="apidoc.element.react-date-picker.join.default">
+        function <span class="apidocSignatureSpan">react-date-picker.join.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function () {
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  if (args.length == 1 &amp;&amp; Array.isArray(args[0])) {
+    args = args[0];
+  }
+
+  return args.filter(function (x) {
+    return !!x;
+  }).join(' ');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.joinFunctions" id="apidoc.module.react-date-picker.joinFunctions">module react-date-picker.joinFunctions</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.joinFunctions.default" id="apidoc.element.react-date-picker.joinFunctions.default">
+        function <span class="apidocSignatureSpan">react-date-picker.joinFunctions.</span>default
+        <span class="apidocSignatureSpan">(a, b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (a, b) {
+  if (a &amp;&amp; b) {
+    return function () {
+      a.apply(undefined, arguments);
+      b.apply(undefined, arguments);
+    };
+  }
+
+  return a || b;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.leftPad" id="apidoc.module.react-date-picker.leftPad">module react-date-picker.leftPad</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.leftPad.default" id="apidoc.element.react-date-picker.leftPad.default">
+        function <span class="apidocSignatureSpan">react-date-picker.leftPad.</span>default
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (str) {
+
+  if (typeof str == 'string' &amp;&amp; str.length &lt; 2) {
+    return str.length ? '0' + str : '00';
+  }
+
+  if (typeof str == 'number') {
+    return str &lt; 10 ? '0' + str : str + '';
+  }
+
+  return str;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.onEnter" id="apidoc.module.react-date-picker.onEnter">module react-date-picker.onEnter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.onEnter.default" id="apidoc.element.react-date-picker.onEnter.default">
+        function <span class="apidocSignatureSpan">react-date-picker.onEnter.</span>default
+        <span class="apidocSignatureSpan">(fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (fn) {
+  return function (event) {
+    if (event.key == 'Enter') {
+      fn(event);
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.onKeyDown" id="apidoc.module.react-date-picker.onKeyDown">module react-date-picker.onKeyDown</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.onKeyDown.default" id="apidoc.element.react-date-picker.onKeyDown.default">
+        function <span class="apidocSignatureSpan">react-date-picker.onKeyDown.</span>default
+        <span class="apidocSignatureSpan">(event)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (event) {
+  var key = event.key;
+
+  if (this.props.onKeyDown) {
+    if (this.props.onKeyDown(event) === false) {
+      return;
+    }
+  }
+
+  if (key == 'Enter' &amp;&amp; this.p.activeDate) {
+    this.confirm(this.p.activeDate, event);
+  }
+
+  var navKeys = this.p.navKeys || _navKeys2.default;
+  var dir = navKeys[key];
+
+  if (!dir) {
+    return;
+  }
+
+  event.preventDefault();
+  this.navigate(dir, event);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.parseFormat" id="apidoc.module.react-date-picker.parseFormat">module react-date-picker.parseFormat</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.parseFormat.default" id="apidoc.element.react-date-picker.parseFormat.default">
+        function <span class="apidocSignatureSpan">react-date-picker.parseFormat.</span>default
+        <span class="apidocSignatureSpan">(format)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (format) {
+  var index = 0;
+  var positionIndex = 0;
+
+  var suggestions = void 0;
+  var suggestionMatch = void 0;
+
+  var positions = [];
+  var matches = [];
+
+  while (index &lt; format.length) {
+    var char = format[index];
+    var match = _formats2.default[char];
+    var matchObject = void 0;
+
+    suggestionMatch = null;
+    suggestions = SUGGESTIONS[char];
+
+    if (!match &amp;&amp; !suggestions) {
+      positions[positionIndex] = char;
+      matches.push(char);
+    } else {
+      if (suggestions &amp;&amp; suggestions.length) {
+        // it might be a longer match
+        suggestionMatch = suggestions.filter(function (s) {
+          return format.substr(index, s.length) == s;
+        })[0];
+      }
+
+      if (!suggestionMatch) {
+        if (!_formats2.default[char]) {
+          console.warn('Format ' + char + ' is not supported yet!');
+          if (suggestions) {
+            console.warn('Use one of ["' + suggestions.join(',') + '"]');
+          }
+          positions[positionIndex] = char;
+          matches.push(char);
+        } else {
+          // we found a match, with no other suggestion
+
+          var currentFormat = _formats2.default[char];
+          var start = positionIndex;
+          var end = positionIndex + (currentFormat.length || 1) - 1;
+
+          matchObject = (0, _objectAssign2.default)({}, currentFormat, { format: char, start: start, end: end });
+
+          for (; start &lt;= end; start++) {
+            positions[positionIndex] = matchObject;
+            positionIndex++;
+          }
+          index++;
+          matches.push(matchObject);
+          continue; // to skip incrementing twice
+        }
+      } else {
+          matchObject = (0, _objectAssign2.default)({}, _formats2.default[suggestionMatch], {
+            format: suggestionMatch, start: positionIndex
+          });
+          matches.push(matchObject);
+
+          var endIndex = positionIndex + suggestionMatch.length;
+
+          matchObject.end = endIndex - 1;
+          while (positionIndex &lt; endIndex) {
+            positions[positionIndex] = matchObject;
+            positionIndex++;
+            index++;
+          }
+          continue; // to skip incrementing index once more
+        }
+    }
+
+    positionIndex++;
+    index++;
+  }
+
+  return { positions: positions, matches: matches };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.setCaretPosition" id="apidoc.module.react-date-picker.setCaretPosition">module react-date-picker.setCaretPosition</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.setCaretPosition.default" id="apidoc.element.react-date-picker.setCaretPosition.default">
+        function <span class="apidocSignatureSpan">react-date-picker.setCaretPosition.</span>default
+        <span class="apidocSignatureSpan">(elem, caretPos)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setCaretPosition(elem, caretPos) {
+  var start = caretPos;
+  var end = caretPos;
+
+  if (caretPos &amp;&amp; (caretPos.start != undefined || caretPos.end != undefined)) {
+    start = caretPos.start || 0;
+    end = caretPos.end || start;
+  }
+
+  if (elem != null) {
+    if (elem.createTextRange) {
+      var range = elem.createTextRange();
+      range.moveStart('character', start);
+      range.moveEnd('character', end);
+      range.select();
+    } else {
+      elem.focus();
+      elem.setSelectionRange(start, end);
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.times" id="apidoc.module.react-date-picker.times">module react-date-picker.times</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.times.default" id="apidoc.element.react-date-picker.times.default">
+        function <span class="apidocSignatureSpan">react-date-picker.times.</span>default
+        <span class="apidocSignatureSpan">(count)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function times(count) {
+  return (count &gt;= 0 ? [].concat(_toConsumableArray(new Array(count))) : []).map(function (v, i) {
+    return i;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.toMoment" id="apidoc.module.react-date-picker.toMoment">module react-date-picker.toMoment</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.toMoment.default" id="apidoc.element.react-date-picker.toMoment.default">
+        function <span class="apidocSignatureSpan">react-date-picker.toMoment.</span>default
+        <span class="apidocSignatureSpan">(value, dateFormat, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (value, dateFormat, config) {
+  if ((typeof dateFormat === 'undefined' ? 'undefined' : _typeof(dateFormat)) === 'object') {
+    config = dateFormat;
+    dateFormat = null;
+  }
+
+  var strict = !!(config &amp;&amp; config.strict);
+  var locale = config &amp;&amp; config.locale;
+
+  dateFormat = dateFormat || config &amp;&amp; config.dateFormat || 'YYYY-MM-DD';
+
+  if (typeof value == 'string') {
+    return (0, _moment2.default)(value, dateFormat, locale, strict);
+  }
+
+  value = value == null ? new Date() : value;
+
+  return (0, _moment2.default)(value, undefined, locale, strict);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.toTimeValue" id="apidoc.module.react-date-picker.toTimeValue">module react-date-picker.toTimeValue</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.toTimeValue.default" id="apidoc.element.react-date-picker.toTimeValue.default">
+        function <span class="apidocSignatureSpan">react-date-picker.toTimeValue.</span>default
+        <span class="apidocSignatureSpan">(_ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (_ref) {
+  var value = _ref.value;
+  var _ref$separator = _ref.separator;
+  var separator = _ref$separator === undefined ? ':' : _ref$separator;
+  var meridiem = _ref.meridiem;
+
+  var parts = value.split(separator);
+
+  var hours = parts[0];
+  var minutes = parts[1];
+  var seconds = parts[2];
+
+  var result = { hours: hours, minutes: minutes };
+
+  if (typeof seconds == 'string' &amp;&amp; seconds.length) {
+    result.seconds = seconds;
+  }
+
+  if (meridiem &amp;&amp; seconds !== undefined &amp;&amp; seconds * 1 != seconds) {
+    result.seconds = (0, _leftPad2.default)(parseInt(seconds, 10));
+  }
+
+  if (meridiem &amp;&amp; seconds === undefined &amp;&amp; minutes * 1 != minutes) {
+    result.minutes = (0, _leftPad2.default)(parseInt(minutes, 10));
+  }
+
+  if (meridiem) {
+    (function () {
+      var meridiems = ['am', 'AM', 'pm', 'PM'];
+      var indexes = meridiems.map(function (m) {
+        return (seconds || minutes).indexOf(m);
+      });
+
+      indexes.forEach(function (indexOf, i) {
+        if (indexOf != -1) {
+          result.meridiem = meridiems[i];
+        }
+      });
+    })();
+  }
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-date-picker.toUpperFirst" id="apidoc.module.react-date-picker.toUpperFirst">module react-date-picker.toUpperFirst</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-date-picker.toUpperFirst.default" id="apidoc.element.react-date-picker.toUpperFirst.default">
+        function <span class="apidocSignatureSpan">react-date-picker.toUpperFirst.</span>default
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (str) {
+  return str ? str.charAt(0).toUpperCase() + str.substr(1) : '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
